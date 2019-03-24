@@ -1,0 +1,128 @@
+h1 {
+	margin-top: 50px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	text-align: center;
+}
+
+.card-wrapper {
+	width: 100%;
+	margin-top: 54px;
+	display: grid;
+	row-gap: 50px;
+}
+
+@media (min-width: 1500px) {
+	.card-wrapper {
+			grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 1499px) and (min-width: 1000px) {
+	.card-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 999px) {
+	.card-wrapper {
+			grid-template-columns: 1fr;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #0D87FF;
+	box-sizing: border-box;
+	padding: 8px 16px;
+	margin: 0 20px;
+}
+
+.card span {
+	font-size: 16px;
+	color: #283544;
+}
+
+#footer {
+	margin-top: 30px;
+		padding: 50px;
+		background: #172132;
+		justify-content: space-between;
+		display: flex;
+}
+
+.footer-info {
+	align-items: flex-start;
+	color: #43A1FF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+		.footer-list > span:not(:first-child) {
+			margin-top: 16px;
+		}
+
+		.footer-list > span:not(:first-child):hover {
+			cursor: pointer;
+		}
+
+		.footer-list > span:first-child {
+			color: white;
+			font-size: 18px;
+			margin-bottom: 8px;
+		}
+
+@media (min-width: 1200px) {
+	.footer-info {
+		flex-direction: row;
+	}
+	#footer {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 1199px) {
+	.footer-info {
+		flex-direction: column;
+		margin: auto;
+	}
+	#footer {
+		flex-direction: row;
+	}
+	.footer-list, .sign-up {
+		margin-top: 40px;
+	}
+}
+
+.feedback {
+	border: 2px solid #0D87FF;
+	box-sizing: border-box;
+	color: white;
+	padding: 8px 16px;
+	margin-left: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+		.feedback:hover {
+			cursor: pointer;
+		}
+
+html,
+body {
+  min-height: 100%;
+	margin: 0;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-between;
+}
