@@ -14,12 +14,15 @@ h1 {
 	align-items: center;
 }
 
-.short-information {
+.information {
 	margin: 30px;
 }
 
-.cards-common-title {
+.common-title {
+	margin-top: 70px;
 	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size: 3rem;
 }
 
 .card-wrapper {
