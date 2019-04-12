@@ -28,30 +28,31 @@ h1 {
 .card-wrapper {
 	width: 100%;
 	margin-top: 54px;
-	display: grid;
-	row-gap: 50px;
+	display: flex;
+}
+
+@media (min-width: 1600px) {
+	.card-wrapper {
+		flex-direction: row;
+	}
+}
+@media (max-width: 1599px) {
+	.card-wrapper {
+		flex-direction: column;
+	}
 }
 
 @media (min-width: 1500px) {
-	.card-wrapper {
-			grid-template-columns: repeat(3, 1fr);
-	}
 	.feedback-popup {
 			width: 800px;
 	}
 }
 @media (max-width: 1499px) and (min-width: 1000px) {
-	.card-wrapper {
-		grid-template-columns: repeat(2, 1fr);
-	}
 	.feedback-popup {
 			width: 500px;
 	}
 }
 @media (max-width: 999px) {
-	.card-wrapper {
-			grid-template-columns: 1fr;
-	}
 	.feedback-popup {
 			width: 200px;
 	}
@@ -62,7 +63,7 @@ h1 {
 	flex-direction: column;
 	box-sizing: border-box;
 	padding: 8px 16px;
-	margin: 0 20px;
+	margin: 20px 20px;
 }
 
 .card span {
