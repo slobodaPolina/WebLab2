@@ -28,18 +28,6 @@ h1 {
 .card-wrapper {
 	width: 100%;
 	margin-top: 54px;
-	display: flex;
-}
-
-@media (min-width: 1600px) {
-	.card-wrapper {
-		flex-direction: row;
-	}
-}
-@media (max-width: 1599px) {
-	.card-wrapper {
-		flex-direction: column;
-	}
 }
 
 @media (min-width: 1500px) {
