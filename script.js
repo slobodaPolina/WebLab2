@@ -1,16 +1,9 @@
-new Vue({
-    el: '#app',
-    data: function() {
-        return {
-          modalHidden: true
-        }
-    },
-    methods: {
-    	showFeedback () {
-    		this.modalHidden = false;
-    	},
-        closeFeedback () {
-          this.modalHidden = true;
-        }
-    }
-})
+function toggleElement(id) {
+    var el = document.getElementById(id);
+    el.style.display = (el.style.display == 'none') ? 'flex' : 'none';
+}
+
+function toggle() {
+    toggleElement("feedbackPopup");
+    toggleElement("popupWrapper");
+}

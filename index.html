@@ -5,7 +5,7 @@
 	<title>My app</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <body>
@@ -141,14 +141,13 @@
 				</div>
 				<div>
 					<input class="feedback" type="button"
-					@click="showFeedback()"
+					onclick="toggle()"
 						value="Обратная связь"/>
 				</div>
 			</div>
 		</div>
-		<div v-if="!modalHidden" class="popup-wrapper"
-		@click="closeFeedback()">
-			<div @click.stop class="feedback-popup">
+		<div class="popup-wrapper" id="popupWrapper">
+			<div class="feedback-popup" id="feedbackPopup">
 				<div class="input-group">
 					<label>Ваша электронная почта</label>
 					<input class="border-black" type="text"/>
@@ -160,13 +159,12 @@
 				<div class="input-group">
 					<input class="border-black short-btn"
 						type="button" value="отправить!"
-						@click="closeFeedback()"/>
+						onclick="toggle()"/>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-	<script src="/script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
