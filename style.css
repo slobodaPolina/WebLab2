@@ -145,7 +145,6 @@ body {
 
 .popup-wrapper {
 	position: fixed;
-	display: none;
 	justify-content: center;
 	align-items: center;
 	z-index: 9;
@@ -161,7 +160,6 @@ body {
 	border: 3px solid #43A1FF;
 	background-color: white;
 	height: 400px;
-	display: none;
 	flex-direction: column;
 }
 
