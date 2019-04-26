@@ -81,15 +81,15 @@ h1 {
 	justify-content: space-between;
 	align-items: flex-start;
 }
-		.footer-list > span:not(:first-child) {
+		.footer-list > a {
 			margin-top: 16px;
 		}
 
-		.footer-list > span:not(:first-child):hover {
+		.footer-list > a:hover {
 			cursor: pointer;
 		}
 
-		.footer-list > span:first-child {
+		.footer-list > h5 {
 			color: white;
 			font-size: 18px;
 			margin-bottom: 8px;
